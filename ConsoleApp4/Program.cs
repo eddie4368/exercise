@@ -13,16 +13,19 @@ namespace ConsoleApp4
         static void Main(string[] args)
         {
             // This asks the user for their legth of the rectangle amount 
-            Console.WriteLine("enter the length of the rectangle: ");
+            Console.Write("enter the length of the rectangle: ");
             double length = Convert.ToDouble(Console.ReadLine());
             
             // This asks the user for their width of the rectangle amount
-            Console.WriteLine("enter the width of the rectangle: ");
+            Console.Write("enter the width of the rectangle: ");
             double width = Convert.ToDouble(Console.ReadLine());
             //This solves the equation for perimeter by multpilying 2 to length and witdh
             double perimeter = 2 * (length + width);
             //This solves the equation for area by multpilying the length and witdh
             double area = length * width;
+           
+            //This one for space between width of rectangle and Results
+            Console.WriteLine();
 
             Console.WriteLine("Results:");
             //this prints out Area of the rectangle
